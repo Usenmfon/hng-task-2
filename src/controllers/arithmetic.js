@@ -1,15 +1,20 @@
-let data = {
-    operation_type: "addition",
-    x: 12,
-    y: 4,
-}
-
-let result = {
-    slackUsername: "usenmfonuko",
-    operation_type: data.operation_type,
-    result: `${data.x + data.y}`
-}
 
 exports.arithmetic = (req, res) => {
-    res.status(200).json(result);
+    let {operation_type, x , y} = req.body;
+    let value = 0;
+    try{
+        if(operation_type.toLowerCase() === "addition"){
+            value = x + y;
+        }else if(operation_type.toLowerCase() === "subtraction"){
+            value = x - y;
+        }else if(operation_type.toLowerCase() === "multiplication"){
+            value = x * y;
+        }else if(operation_type.toLowerCase() === "multiplication"){
+            value = x / y;
+        }
+    }catch(error){
+        console.log(error)
+    }
+
+    res.status(200).json({slackUsername: "usenmfonuko",operation_type: operation_type, result: value});
 };
