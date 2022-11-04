@@ -1,0 +1,34 @@
+{
+  "name": "hng-task-2",
+  "version": "1.0.0",
+  "description": "arithmetic operations using AI",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usenmfon/hng-task-2.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "api",
+    "restful",
+    "apis"
+  ],
+  "author": "Usenmfon Uko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Usenmfon/hng-task-2/issues"
+  },
+  "homepage": "https://github.com/Usenmfon/hng-task-2#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
