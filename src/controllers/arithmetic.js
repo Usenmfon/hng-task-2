@@ -9,7 +9,7 @@ exports.arithmetic = (req, res) => {
             value = x - y;
         }else if(operation_type.toLowerCase() === "multiplication"){
             value = x * y;
-        }else if(operation_type.toLowerCase() === "multiplication"){
+        }else if(operation_type.toLowerCase() === "division"){
             value = x / y;
         }
     }catch(error){
