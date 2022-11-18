@@ -1,5 +1,5 @@
 const express = require("express");
-
+console.log("eee")
 const router = express.Router();
 const controller = require("../controllers/arithmetic");
 
